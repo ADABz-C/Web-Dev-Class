@@ -218,17 +218,45 @@
 
                     addBtn.addEventListener('click', addItem, false);
 
+        
+                    
                     function addItem() {
                         var newItem = prompt("New Item:");
                         var newLI = document.createElement('li');
                         var newLIText = document.createTextNode(newItem);
                         newLI.appendChild(newLIText);
                         myList.appendChild(newLI);
+
+                        // let codeList_li = document.querySelectorAll('#codeBox li');
+                    
+                        // let totalCodeListNum = codeList_li.length;
+                        // Adds to new elements
+                        for(let i =0; i < totalCodeListNum; i++ ){
+                            const imgElement =  document.createElement('img');
+                            imgElement.setAttribute("src","https://s3-us-west-2.amazonaws.com/s.cdpn.io/27019/trashcanIcon.png");
+                            imgElement.className = "listIcon";
+
+                            newLI.appendChild(imgElement);
+                        };
                     }
+
+                    myList.addEventListener('click', changeProp, false);
+                    function changeProp(e) {
+                        var target = getTarget(e);
+                        var tParent = target.parentNode;
+
+                        if (tParent.tagName == "LI") {
+                            myList.removeChild(tParent);
+                        } else if (tParent.tagName == "UL") {
+                            var listItem = target;
+                            listItem.classList.toggle("selected");
+                        }
+                    };
+
+
+
                 </script>
-
-
-
+                <script src="index.js"></script>
 
 </body>
 
