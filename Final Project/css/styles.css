@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'LoraMedium';
+    src: url(../Fonts/Lora-Medium.ttf);
+}
+@font-face {
+    font-family: 'LoraReg';
+    src: url(../Fonts/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: 'LoraBold';
+    src: url(../Fonts/Lora-Bold.ttf);
+}
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    background-image: url(../images/loginBCKGRND.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100%;
+    /* padding-top: 100px; */
+}
+.loginBox{
+    padding-top: 20px;
+    font-family: LoraMedium;
+    text-align: center;
+    width: 400px;
+    height: 600px;      
+    margin: 0 auto; 
+    align-items: center;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.loginBox h1{
+    padding-bottom: 50px;
+}
+.form-group input{
+    font-family: LoraReg;
+    width: 60%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+#loginForm button{
+    margin-top: 45px;
+    margin-bottom: 200px;
+    height: 35px;
+    width: 60%;
+    border-radius: 20px;
+    background-image: url(../images/loginBCKGRND.jpeg);
+    font-family: LoraBold;
+    color: whitesmoke;
+}
+
+#loginForm p a{
+    font-family: LoraBold;
+    text-decoration: none;
+    color: black;
+}
+
+#signupForm button{
+    margin-top: 45px;
+    margin-bottom: 200px;
+    height: 35px;
+    width: 60%;
+    border-radius: 20px;
+    background-image: url(../images/loginBCKGRND.jpeg);
+    font-family: LoraBold;
+    color: whitesmoke;
+}
+
+#signupForm p a{
+    font-family: LoraBold;
+    text-decoration: none;
+    color: black;
+}
