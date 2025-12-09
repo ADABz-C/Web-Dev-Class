@@ -45,6 +45,7 @@ async function searcher() {
             return;
         }
 
+        document.getElementById('title').textContent = 'Loading....'
         displayResult(match);
     })
 }
