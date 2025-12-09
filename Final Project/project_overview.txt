@@ -1,0 +1,53 @@
+Project Overview
+
+Project Concept
+
+This project is a Webtoon Title Search application that allows users to
+search for Webtoon series and instantly view detailed information such
+as the title, description, genres, and thumbnail images. The
+system interacts with the Webtoon API to retrieve real-time data and
+display it to the user through a clean, user-friendly interface.
+
+Why This Theme Was Chosen
+
+Webtoons are extremely popular among young audiences and digital
+readers. This theme was chosen because: - It provides a fun and
+relatable context for practicing web development. - It allows
+integration with a real API, which demonstrates practical skills. - It
+offers opportunities to include interactive features, data parsing, and
+asynchronous logic.
+
+Interactive Features Included
+
+-   Search Bar: Users can type a Webtoon title and receive matching
+    results.
+-   Dynamic Display: When a match is found, the page updates with:
+    -   Title
+    -   Description
+    -   Thumbnail image
+    -   Genres
+-   Error Handling: Displays messages when a title isn’t found.
+-   API Integration: Fetches live data from the Webtoon RapidAPI
+    service.
+
+The Async Operation Used
+
+The project includes asynchronous operations using: - async and await -
+The fetch() API call to retrieve data from the Webtoon API - Awaiting
+JSON parsing of the response - Non-blocking execution to keep the
+interface responsive while data loads
+
+Example:
+
+    const response = await fetch(url, options);
+    const data = await response.json();
+
+Brief Notes for the Grader
+
+-   The project demonstrates full use of asynchronous JavaScript.
+-   API calls are correctly structured with proper headers.
+-   User interface updates only after the asynchronous data retrieval
+    completes.
+-   The code is organized for readability and easy grading.
+-   A working search feature confirms proper API integration and DOM
+    manipulation.
