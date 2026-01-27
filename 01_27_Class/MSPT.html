@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Title</title>
+ <link rel="stylesheet">
+ </head>
+ <!--Media Streaming Popularity Tracker
+Problem Name: topKPopularMedia
+Problem Description:
+You are building a media analytics feature for a streaming platform. Users watch movies, shows, or videos, and each view is logged with the title and watch duration.
+Your task is to find the top K most-watched media items based on the total watch time.
+Write a function topKPopularMedia(logs, K) that:
+Takes an array of logs, where each log is an object { title: string, duration: number }.
+Calculates the total watch time for each unique media title.
+Returns an array of the top K titles sorted by highest total watch time.
+If two titles have the same total watch time, sort them alphabetically.
+Function Signature:
+function topKPopularMedia(logs, K) {
+// Your code here
+}
+Input:
+logs: Array of objects. Each object represents a single watch session with:
+title (string): Name of the media
+duration (number): Time watched in minutes (1 ≤ duration ≤ 1000)
+K (number): The number of top titles to return (1 ≤ K ≤ number of unique titles)
+Output:
+Array of strings representing the top K media titles based on total watch time, sorted descending by total watch time.
+Example 1:
+let logs = [
+{ title: "Action Blast", duration: 120 },
+{ title: "Laugh Riot", duration: 90 },
+{ title: "Action Blast", duration: 100 },
+{ title: "Family Fun", duration: 80 },
+{ title: "Laugh Riot", duration: 60 }
+];
+let K = 2;
+topKPopularMedia(logs, K);
+// Output: ["Action Blast", "Laugh Riot"]
+Explanation:
+"Action Blast" total = 120 + 100 = 220
+"Laugh Riot" total = 90 + 60 = 150
+"Family Fun" total = 80
+Top 2 are "Action Blast" and "Laugh Riot"
+Input:
+logs: Array of objects. Each object represents a single watch session with:
+title (string): Name of the media
+duration (number): Time watched in minutes (1 ≤ duration ≤ 1000)
+K (number): The number of top titles to return (1 ≤ K ≤ number of unique titles)
+Output:
+Array of strings representing the top K media titles based on total watch time, sorted descending by total watch time.
+Example 1:
+let logs = [
+{ title: "Action Blast", duration: 120 },
+{ title: "Laugh Riot", duration: 90 },
+{ title: "Action Blast", duration: 100 },
+{ title: "Family Fun", duration: 80 },
+{ title: "Laugh Riot", duration: 60 }
+];
+let K = 2;
+topKPopularMedia(logs, K);
+// Output: ["Action Blast", "Laugh Riot"]
+Explanation:
+"Action Blast" total = 120 + 100 = 220
+"Laugh Riot" total = 90 + 60 = 150
+"Family Fun" total = 80
+Top 2 are "Action Blast" and "Laugh Riot"
+Example 2:
+let logs = [
+{ title: "Movie A", duration: 30 },
+{ title: "Movie B", duration: 30 },
+{ title: "Movie C", duration: 50 }
+];
+let K = 2;
+topKPopularMedia(logs, K);
+// Output: ["Movie C", "Movie A"]
+Explanation:
+"Movie C" = 50, "Movie A" = 30, "Movie B" = 30
+Tie between "Movie A" and "Movie B", so we pick alphabetically → "Movie A"
+Constraints:
+logs.length <= 10^4
+1 <= logs[i].duration <= 1000
+1 <= K <= number of unique media titles  -->
+ <body>
+<script src="MSPT.js"></script>
+</body>
+</html>
