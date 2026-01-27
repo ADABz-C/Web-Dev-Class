@@ -63,3 +63,36 @@ let movieByGenre = movies.reduce(function (groups, movie){
 }, {});
 
 console.log('Movie by genre: ', movieByGenre);
+
+
+function topPopulateMedia(logs,k){
+
+    let totaltimeMap = {};
+
+    logs.forEach(function (log){
+        let title = log.title;
+        let duration = log.duration;
+
+        if(totaltimeMap[title]) {
+            totaltimeMap[title] += duration;
+        }else{
+            totaltimeMap[title] = duration;
+        }
+    });
+
+    let entries = Object.entries(totaltimeMap);
+
+    entries.sort(function(a,b){
+        let timeDiff = b[1] -a[1];
+        if (timeDiff !==0){
+            return timeDiff
+        }else{
+            return a[0].localeCompare(b[0]); //alphabetical compare
+        }
+    })
+
+    let topk = entries.slice(0,k).map(function (entry){
+        return entry[0];
+    });
+    return topk;
+}
