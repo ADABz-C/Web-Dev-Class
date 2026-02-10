@@ -1,53 +1,7 @@
-Project Overview
+Title: Ocean Stratification and Water Layer Circulation
 
-Project Concept
 
-This project is a Webtoon Title Search application that allows users to
-search for Webtoon series and instantly view detailed information such
-as the title, description, genres, and thumbnail images. The
-system interacts with the Webtoon API to retrieve real-time data and
-display it to the user through a clean, user-friendly interface.
+Caption: The image shows how the ocean is divided into layers based on temperature, a process known as stratification. The top layer is lighter in color and warmer, marked at about 22°, while the deeper layers are darker and cooler, labeled 10° and 4°. Arrows within the layers show circular water movement, with separate circulation occurring in the warm surface water and the colder deep water. Wind is shown moving across the surface from left to right, helping mix the top layer, while the sun represents solar heating that warms the surface water.
 
-Why This Theme Was Chosen
 
-Webtoons are extremely popular among young audiences and digital
-readers. This theme was chosen because: - It provides a fun and
-relatable context for practicing web development. - It allows
-integration with a real API, which demonstrates practical skills. - It
-offers opportunities to include interactive features, data parsing, and
-asynchronous logic.
-
-Interactive Features Included
-
--   Search Bar: Users can type a Webtoon title and receive matching
-    results.
--   Dynamic Display: When a match is found, the page updates with:
-    -   Title
-    -   Description
-    -   Thumbnail image
-    -   Genres
--   Error Handling: Displays messages when a title isn’t found.
--   API Integration: Fetches live data from the Webtoon RapidAPI
-    service.
-
-The Async Operation Used
-
-The project includes asynchronous operations using: - async and await -
-The fetch() API call to retrieve data from the Webtoon API - Awaiting
-JSON parsing of the response - Non-blocking execution to keep the
-interface responsive while data loads
-
-Example:
-
-    const response = await fetch(url, options);
-    const data = await response.json();
-
-Brief Notes for the Grader
-
--   The project demonstrates full use of asynchronous JavaScript.
--   API calls are correctly structured with proper headers.
--   User interface updates only after the asynchronous data retrieval
-    completes.
--   The code is organized for readability and easy grading.
--   A working search feature confirms proper API integration and DOM
-    manipulation.
+Take Away: Just like how hot air is less dense than cold air. Warm water is less dense than cold water. This figure is important because it explains how temperature differences create layers in the ocean that do not easily mix. Warm, less dense water stays near the surface, while colder, denser water sinks deeper, affecting how heat and nutrients move through the ocean. The image also shows that wind mainly impacts the surface layer, leaving deeper water more isolated. By understanding ocean stratification, you can better see how ocean circulation influences climate, marine life, and energy transfer in the ocean.
