@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive City Scene - JavaScript Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌆 Interactive City Scene</h1>
+        <p class="subtitle">Learn JavaScript by bringing this city to life!</p>
+        
+        <!-- The City Scene -->
+        <div class="scene" id="cityScene">
+            <!-- Sky Background -->
+            <div class="sky" id="sky">
+                <div class="sun" id="sun">☀️</div>
+                <div class="moon" id="moon">🌙</div>
+                <div class="stars" id="stars">
+                    <span class="star">✨</span>
+                    <span class="star">✨</span>
+                    <span class="star">✨</span>
+                    <span class="star">✨</span>
+                    <span class="star">✨</span>
+                </div>
+                <div class="cloud cloud1">☁️</div>
+                <div class="cloud cloud2">☁️</div>
+            </div>
+            
+            <!-- Buildings -->
+            <div class="buildings">
+                <div class="building" style="height: 200px; left: 50px;">
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                </div>
+                <div class="building" style="height: 250px; left: 180px;">
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                </div>
+                <div class="building" style="height: 180px; left: 310px;">
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                </div>
+                <div class="building" style="height: 220px; left: 440px;">
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                </div>
+            </div>
+            
+            <!-- Street -->
+            <div class="street">
+                <div class="street-light" id="streetLight1">💡</div>
+                <div class="street-light" id="streetLight2">💡</div>
+                <div class="car" id="car">🚗</div>
+            </div>
+        </div>
+        
+        <!-- Control Panel -->
+        <div class="controls">
+            <h3>🎮 Control Panel</h3>
+            <button id="toggleDayNight" class="btn btn-primary">🌙 Switch to Night</button>
+            <button id="toggleLights" class="btn btn-secondary">💡 Toggle Street Lights</button>
+            <button id="moveCar" class="btn btn-success">🚗 Move Car</button>
+            <button id="toggleWindows" class="btn btn-warning">🏢 Toggle Building Lights</button>
+        </div>
+        
+        <!-- Status Display -->
+        <div class="status" id="status">
+            Ready to code! ✨
+        </div>
+    </div>
+    
+    <!-- Load JavaScript Files -->
+    <script src="background-animation.js"></script>
+    <script src="interactive.js"></script>
+</body>
+</html>

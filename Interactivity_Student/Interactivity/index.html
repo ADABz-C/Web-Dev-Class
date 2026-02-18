@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Stage Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Interactive Movie Stage</h1>
+        <p class="subtitle">Watch JavaScript bring the stage to life!</p>
+
+        <!-- The Stage -->
+        <div class="stage-container">
+            <!-- Red Curtains -->
+            <div class="curtain curtain-left"></div>
+            <div class="curtain curtain-right"></div>
+            
+            <!-- Stage Lights -->
+            <div class="stage-light left-light">
+                <div class="light-bulb" id="leftBulb"></div>
+                <div class="light-beam" id="leftBeam"></div>
+            </div>
+            
+            <div class="stage-light right-light">
+                <div class="light-bulb" id="rightBulb"></div>
+                <div class="light-beam" id="rightBeam"></div>
+            </div>
+            
+            <!-- Main Stage Floor -->
+            <div class="stage-floor">
+                <!-- Director Character -->
+                <div class="director" id="director">
+                    <!-- Director's Cap -->
+                    <div class="cap"></div>
+                    <!-- Director's Head -->
+                    <div class="head">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+                    <!-- Director's Body -->
+                    <div class="body"></div>
+                    <!-- Director's Megaphone -->
+                    <div class="megaphone" id="megaphone">📢</div>
+                </div>
+                
+                <!-- Action Text -->
+                <div class="action-text" id="actionText">ACTION!</div>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button id="lightButton" class="btn">💡 Turn ON Lights</button>
+            <button id="actionButton" class="btn">🎬 Director Says Action!</button>
+        </div>
+
+        <!-- Status Message -->
+        <div class="status" id="status">Ready to start! 🎭</div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

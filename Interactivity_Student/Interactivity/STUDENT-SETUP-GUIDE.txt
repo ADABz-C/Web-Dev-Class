@@ -1,0 +1,177 @@
+==========================================
+📥 STUDENT SETUP GUIDE
+Interactive JavaScript Demo
+==========================================
+
+Follow these steps to get ready for the live coding demo!
+
+==========================================
+STEP 1: DOWNLOAD THE FILES
+==========================================
+
+1. Go to the provided link (your instructor will share this)
+
+2. Click the GREEN "Code" button
+
+3. Click "Download ZIP"
+
+4. Save the file to your Desktop or Downloads folder
+
+
+==========================================
+STEP 2: EXTRACT THE ZIP FILE
+==========================================
+
+Windows:
+  • Right-click on the downloaded ZIP file
+  • Select "Extract All..."
+  • Click "Extract"
+  • A new folder will appear
+
+Mac:
+  • Double-click the ZIP file
+  • It will automatically extract
+
+
+==========================================
+STEP 3: OPEN IN VS CODE
+==========================================
+
+1. Open Visual Studio Code
+
+2. Click "File" → "Open Folder"
+
+3. Navigate to the extracted folder (probably called "live-demo")
+
+4. Click "Select Folder" or "Open"
+
+You should now see 3 files in the sidebar:
+  ✓ index.html
+  ✓ styles.css
+  ✓ script.js
+
+
+==========================================
+STEP 4: OPEN THE WEBSITE
+==========================================
+
+1. In VS Code, RIGHT-CLICK on "index.html"
+
+2. Select "Reveal in File Explorer" (Windows) or "Reveal in Finder" (Mac)
+
+3. In the file explorer window, RIGHT-CLICK on "index.html"
+
+4. Select "Open with" → Your web browser (Chrome, Firefox, Edge, Safari)
+
+You should now see a beautiful movie stage in your browser!
+
+
+==========================================
+STEP 5: ARRANGE YOUR SCREEN
+==========================================
+
+For the best experience:
+
+Split your screen:
+  • Left side: VS Code (showing script.js)
+  • Right side: Web browser (showing the stage)
+
+This way you can see the code AND the result at the same time!
+
+
+==========================================
+DURING THE DEMO
+==========================================
+
+• WATCH your instructor type code in script.js
+• You DON'T need to type along (just watch!)
+• REFRESH your browser when instructor says to see changes
+• Ask questions if confused!
+
+
+==========================================
+WHAT YOU'LL SEE
+==========================================
+
+Before JavaScript:
+  • Beautiful stage with red curtains
+  • Two spotlights (not lit)
+  • A director character standing on stage
+  • Two buttons that don't do anything
+
+After JavaScript:
+  • Click "Turn ON Lights" → Spotlights shine!
+  • Click "Director Says Action!" → Director jumps and ACTION appears!
+
+
+==========================================
+TROUBLESHOOTING
+==========================================
+
+PROBLEM: I don't see three files in VS Code
+SOLUTION: Make sure you opened the FOLDER, not just one file
+
+PROBLEM: The website looks broken or weird
+SOLUTION: Make sure all 3 files are in the same folder
+
+PROBLEM: The buttons don't work
+SOLUTION: That's normal! They won't work until we add JavaScript
+
+PROBLEM: I can't find the folder I extracted
+SOLUTION: Check your Desktop and Downloads folder
+
+
+==========================================
+AFTER THE DEMO
+==========================================
+
+You'll have the complete code to take home!
+
+Try these at home:
+  • Click the buttons and watch it work
+  • Look at the code in script.js
+  • Try changing the text in the messages
+  • Experiment and have fun!
+
+
+==========================================
+FILES EXPLAINED
+==========================================
+
+index.html
+  • The structure of the stage
+  • HTML creates all the elements
+  • You don't need to edit this
+
+styles.css
+  • Makes everything look beautiful
+  • Defines colors, animations, layout
+  • You don't need to edit this
+
+script.js
+  • THIS is where JavaScript goes!
+  • Currently empty
+  • You'll watch your instructor fill this in
+  • This makes everything INTERACTIVE!
+
+
+==========================================
+REQUIREMENTS
+==========================================
+
+Software you need:
+  ✓ Visual Studio Code (free)
+  ✓ A web browser (Chrome, Firefox, Edge, Safari)
+
+No special plugins or extensions needed!
+
+
+==========================================
+READY TO GO!
+==========================================
+
+Once you complete all 5 steps above, you're ready!
+
+Sit back, watch, and enjoy learning JavaScript! 🎬
+
+==========================================
