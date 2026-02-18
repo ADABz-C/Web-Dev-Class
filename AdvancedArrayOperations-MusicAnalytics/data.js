@@ -1,7 +1,7 @@
 // StreamBeats Analytics Dashboard - Dummy Data
 // 30 Songs across 6 Genres with varied artists
 
-const listeningData = [
+export const listeningData = [
     // Pop Genre (5 songs)
     { 
         title: "Sunset Dreams", 
