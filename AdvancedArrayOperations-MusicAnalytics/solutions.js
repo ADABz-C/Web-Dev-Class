@@ -125,3 +125,91 @@ for (let i = 0; i<= listeningData.length - 4; i++){
 console.log(bestWindow);
 let bestWindowString = JSON.stringify(bestWindow, null, 2);
 task3Answer.innerHTML = `<p>${bestWindowString}</p>`;
+
+///////// TASK 4 
+
+const task4Answer = document.getElementById('task4Answer');
+const artistData = listeningData.reduce((acc, song) => {
+    if (!acc[song.artist]){
+        acc[song.artist] = {};
+    }
+
+    if (!acc[song.artist][song.genre]){
+        acc[song.artist][song.genre] = {
+            totalStreams: 0,
+            count: 0
+        };
+    }
+
+    acc[song.artist][song.genre].totalStreams += song.streams;
+    acc[song.artist][song.genre].count += 1;
+
+    return acc;
+
+},{});
+
+const result = Object.keys(artistData)
+    .map(artist => {
+
+    const genres = Object.keys(artistData[artist]);
+    const genreCount = genres.length;
+
+    if (genreCount < 3) return null;
+
+    let bestGenre = null;
+    let bestAvg = -Infinity;
+
+    genres.forEach(genre => {
+        const data = artistData[artist][genre];
+        const avg = data.totalStreams / data.count;
+
+        if (avg > bestAvg) {
+        bestAvg = avg;
+        bestGenre = genre;
+        }
+    });
+
+    return {
+        artist,
+        genres,
+        genreCount,
+        bestGenre,
+        bestGenreAvgStreams: bestAvg
+    };
+
+    })
+    .filter(item => item !== null);
+
+console.log(result);
+let resultString = JSON.stringify(result, null, 2);
+task4Answer.innerHTML = `<p>${resultString}</p>`;
+
+
+////////// TASK 5
+
+const task5Answer = document.getElementById('task5Answer');
+
+const optPlaylist = listeningData
+    .filter(song =>
+        song.rating >= 4.3 &&
+        song.streams >= 2000000 &&
+        song.duration >= 180 &&
+        song.duration <= 240
+    )
+    .map(song => {
+    const qualityScore =
+        (song.rating * 2) + (song.streams / 500000);
+
+    return {
+        title: song.title,
+        artist: song.artist,
+        qualityScore
+    };
+    })
+    .sort((a, b) => b.qualityScore - a.qualityScore)
+    .slice(0, 10);
+
+
+console.log(optPlaylist);
+let optPlaylistString = JSON.stringify(optPlaylist, null, 2);
+task5Answer.innerHTML = `<p>${optPlaylistString}</p>`;
